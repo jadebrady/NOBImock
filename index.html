@@ -11,14 +11,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
   <style>
-.card-cover {
+/* .card-cover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
+} */
 *{
   font-family: 'Montserrat', sans-serif;
 
+}
+@media (min-width:990px){
+  #title-lg{
+    visibility: visible;
+
+  }
+  #title-sm{
+    visibility: hidden;
+    display: none !important;
+  }
+  
+}
+@media(max-width:990px){
+  #title-sm{
+    visibility: visible;
+  }
+  #title-lg{
+    visibility: hidden;
+    display: none !important;
+  }
 }
   </style>
 
@@ -26,11 +46,12 @@
 
 <body>
   <!-- Title -->
-  <section id="title">
+  <div id="title-lg">
+    <section id="title">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-4 fw-bold lh-1 text-body-emphasis">NOBI</h1>
-          <p class="lead">Underwear brand slaying the game. Nobi undies making you feel the you-<em>est</em> you possible.</p>
+          <p class="lead">Underwear made for you to look & feel the <em>you-est</em> you.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" style="background-color: #AEA097; border-color: #AEA097;">Shop</button>
             <button type="button" class="btn btn-outline-secondary btn-lg px-4">About us</button>
@@ -40,10 +61,29 @@
             <img class="rounded-lg-2" src="./nobi1.png" alt="nobi underwear" width="650">
         </div>
       </div>
+    </div>
+    <div id=title-sm>
+      <div class="container col-xxl-8 px-4 py-5 align-items-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./nobi1.png" class="d-block mx-xl-auto img-fluid " alt="Nobi-promo" width="1080" height="1080" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">NOBI</h1>
+            <p class="lead">Underwear made for you to look & feel the <em>you-est</em> you.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: #AEA097; border-color: #AEA097;">Shop</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
   </section>
   <!-- Features -->
   <section id="features">
-    <div class="row row-cols-1 row-cols-lg-3 align-items-center g-3 py-5 mx-4 my-2">
+    <!-- <div class="row row-cols-1 row-cols-lg-3 align-items-center g-3 py-5 mx-4 my-2">
       <div class="col">
         <div class="card card-cover h-150 text-bg-dark rounded-4 shadow-lg" style="background-image: url('./nobibrown.png');">
           <div class="d-flex flex-column h-100 p-5 pb-5 text-white text-shadow-1">
@@ -67,7 +107,65 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm rounded-5">
+              <img src="./nobiblack.png" class="rounded-5">
+              <div class="card-body">
+                <p class="card-text">Onyx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">XS</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">S</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">M</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">L</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">XL</button>
+                  </div>
+                  <small class="text-body-secondary">$33.00</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm rounded-5">
+              <img src="./nobiwhite.png" class="rounded-5">
+              <div class="card-body">
+                <p class="card-text">Ivory</p>
+                <div class="d-flex justify-content-between align-items-center" >
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">XS</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">S</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">M</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">L</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">XL</button>
+                  </div>
+                  <small class="text-body-secondary">$33.00</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm rounded-5">
+              <img src="./nobibrown.png" class="rounded-5">
+              <div class="card-body">
+                <p class="card-text">Cocoa</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">XS</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">S</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">M</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">L</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">XL</button>
+                  </div>
+                  <small class="text-body-secondary">$33.00</small>
+                </div>
+              </div>
+            </div>
+          </div>
   </section>
   <!-- Testimonial -->
   <section id="testimonial">
